@@ -1,0 +1,23 @@
+<title>status</title>
+
+      <%= stylesheet_link_tag 'custom_form', :media => 'screen' %>
+      
+      <h1 class="h1">status</h1>
+  <section class="form_container">
+      
+      <%= form_for [@user, @status] do |f| %>
+
+          <div class="field2">
+          <%= f.label :email %><br />
+          <%= f.text_field :email %><br />
+          </div>
+          
+          <div class="field4">
+          <%= f.label :user_status %><br />
+          <%= f.text_field :user_status %><br />
+          </div>
+
+
+          <%= f.submit "submit" %>
+      <% end %>
+  </section>

@@ -1,0 +1,49 @@
+<title>sign_up</title>
+
+      <%= stylesheet_link_tag 'custom_form', :media => 'screen' %>
+      
+      <h1 class="h1">sign_up</h1>
+  <section class="form_container">
+      
+      <%= form_for(@user) do |f| %>
+          <div class="field">
+          <%= f.label :name %><br />
+          </div>
+        <section class="name_field">
+
+         <div class="field1">
+          <%= f.label :last %><br />
+          <%= f.text_field :last %><br />
+          </div>
+
+          <div class="field1">
+          <%= f.label :middle %><br />
+          <%= f.text_field :middle %>
+          </div>
+
+          <div class="field1">
+          <%= f.label :first %><br />
+          <%= f.text_field :name %>
+          </div>
+
+       </section>
+
+          <div class="field2">
+          <%= f.label :email %><br />
+          <%= f.text_field :email %><br />
+          </div>
+          
+          <div class="field3">
+          <%= f.label :phone %><br />
+          <%= f.text_field :phone %><br />
+          </div>
+
+          <div class="field4">
+          <%= f.label :textbox %><br />
+          <%= f.text_area :textbox, :size=>"40" %><br />
+          </div>
+
+
+          <%= f.submit "submit" %>
+      <% end %>
+  </section>
